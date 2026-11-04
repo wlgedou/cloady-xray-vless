@@ -1,0 +1,18 @@
+{
+  "log": {"loglevel": "warning"},
+  "inbounds": [
+    {
+      "port": 3000,
+      "protocol": "vless",
+      "settings": {
+        "clients": [{"id": "7e4c9f2a-3b8d-41a6-9c6f-2d5a8b7c4e1f", "flow": ""}],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {"path": "/tk-cloady"}
+      }
+    }
+  ],
+  "outbounds": [{"protocol": "freedom", "tag": "direct"}]
+}
